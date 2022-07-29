@@ -1,9 +1,19 @@
 import os
+import random
+from datetime import date
+week = random.randint(0, 54)
+day = random.randint(0, 6)
 
-Y = 2004
-M = 6
-D = 4
+date = date.today() 
 
-os.system(f'git commit -m commits.yml --date ${Y}-${M}-${D}:10:57-03:00')
-os.system('git add .')
-os.system('git push -u origin main')
+
+#date = os.system('echo $(date)')
+#date = 'sex 7 Dec 2022 18:41:45'
+
+print(date)
+
+#os.system(f'echo ${date} > commits.yml')
+#os.system('git add commits.yml')
+#os.system(f'git commit -m "${date}" --date "${date}"')
+#os.system('git push')
+
