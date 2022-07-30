@@ -1,19 +1,22 @@
 import os
 import random
 from datetime import date
-week = random.randint(0, 54)
-day = random.randint(0, 6)
 
-date = date.today() 
+counter = 0
+
+actual_date = date.today().strftime("%Y-%m-%d")
 
 
-#date = os.system('echo $(date)')
-#date = 'sex 7 Dec 2022 18:41:45'
+while counter <= 1000:
+    year = random.randint(2021, 2022)
+    month = random.randint(1, 12)
+    day = random.randint(1, 31)
 
-print(date)
+    print(f"{year}-{month}-{day}")
 
-#os.system(f'echo ${date} > commits.yml')
-#os.system('git add commits.yml')
-#os.system(f'git commit -m "${date}" --date "${date}"')
-#os.system('git push')
+    os.system(f'echo {year}-{month}-{day} > commits.yml')
+    os.system('git add commits.yml')
+    os.system(f'git commit -m "{year}-{month}-{day}" --date "{year}-{month}-{day}"')
+    counter = counter + 1
 
+os.system('git push')
