@@ -1,0 +1,10 @@
+# What is it
+green-cards is basically a python project that creates a sequence of commits on random dates to generate green squares on github.
+
+# How it works
+basically it works by generating random dates within a set time interval and uses the os library to commit the date generated within the commits.yml file and at the same time be committed to that date through the --date parameter, after all commits it push for the repository.
+
+# How to use
+88 / 5.000
+Resultados de tradução
+you must fork the repository and clone, after that just run '''python app.py'''
