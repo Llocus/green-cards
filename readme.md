@@ -6,3 +6,6 @@ basically it works by generating random dates within a set time interval and use
 
 # How to use
 you must fork the repository and clone from your profile, after that just run '''python app.py'''
+
+#Results
+<img src="https://i.imgur.com/JuONa2m.png">
