@@ -1,3 +1,6 @@
+# change the parameter number within the gen_date() function on line 27 ->
+# -> to change the number of commits
+
 import os
 import random
 
@@ -18,11 +21,11 @@ def make_commits():
         print(date)
         os.system(f"echo {date} > commits.yml")
         os.system(f"git add commits.yml")
-        os.system(f'git commit -m "{date}" --date "{date}" > dates.log')
+        os.system(f'git commit -m "{date}" --date "{date}" > dates.log') #I used dates.log instead of dev null to be able to run on windows
     os.system('git push')
 
 def main():
-    gen_date(20000)
+    gen_date(9999)
     make_commits()
 
 if __name__ == '__main__':
