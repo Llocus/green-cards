@@ -1,4 +1,4 @@
-# change the parameter number within the gen_date() function on line 27 ->
+# change the parameter number within the gen_date() function on line 28 ->
 # -> to change the number of commits
 
 import os
