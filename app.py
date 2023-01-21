@@ -8,7 +8,7 @@ dates = []
 
 def gen_date(max_commits, counter = 0):
     while counter <= max_commits:
-        year = random.randint(2021, 2022)
+        year = random.randint(2021, 2023)
         month = random.randint(1, 12)
         day = random.randint(1, 31)
 
