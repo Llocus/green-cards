@@ -1,4 +1,5 @@
 # What is it
+explanatory video: https://www.youtube.com/watch?v=lKXrDjckD_s
 green-cards is basically a python project that creates a sequence of commits on random dates to generate green squares on github.
 
 # How it works
